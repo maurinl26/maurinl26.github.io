@@ -1,6 +1,6 @@
 Data Scientist et Ingénieur Logiciel AI / HPC, spécialisé dans la météo et l'énergie.
 
-Je répond à vos problématiques industrielles par la mise en place de solutions d'analyse de données, du capteur à la visualisation. 
+Je réponds à vos problématiques par la mise en place de solutions d'analyse de données, du capteur à la visualisation. Mes points forts sont la mise en place de tâches intensives en calcul (GPU), fiables et didactiques.
 
 Mes solutions s'intègre sans friction au SSO de votre entreprise.
 
@@ -47,7 +47,15 @@ Mes solutions s'intègre sans friction au SSO de votre entreprise.
 
 🧮 HPC : accès aux machines [EuroHPC](https://www.eurohpc-ju.europa.eu/index_en), AI Factories et Clusters d'entraînement 
 
+## Compétences et certifications
+
+:en:
+:de:
+:fr:
+
+
 ## Contact
 
 [maurin.loic.ac@gmail.com](mailto:maurin.loic.ac@gmail.com)
+
 [\+33619647881](tel:+33619647881)
