@@ -54,6 +54,11 @@ Techniquement, je déploie le traitement sur votre cloud interne (OpenShift) ou 
 
 🧮 HPC : accès aux machines [EuroHPC](https://www.eurohpc-ju.europa.eu/index_en), AI Factories et Clusters d'entraînement 
 
+## Enseignement - Formation
+
+:closed_book: Filtrage Stochastique, parcours HPC-BigData, ENM / ENSEEIHT
+    :satellite: Fondamentaux et application des algorithmes de filtrage, du filtre Kalman au modèle de diffusion, pour l'assimilation de données en géosciences
+
 ## Compétences et certifications
 
 :en:
