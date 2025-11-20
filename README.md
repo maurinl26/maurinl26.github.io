@@ -1,8 +1,14 @@
 Data Scientist et Ingénieur Logiciel AI / HPC, spécialisé dans la météo et l'énergie.
 
-Je réponds à vos problématiques par la mise en place de solutions d'analyse de données, du capteur à la visualisation. Mes points forts sont la mise en place de tâches intensives en calcul (GPU), fiables et didactiques.
+Je réponds à vos problématiques industrielles par la mise en place de solutions d'analyse de données, du capteur à la visualisation. 
+Je traduis l'objectif industriel (qualité, optimisation des procédés) en solution digitale.
 
-Mes solutions s'intègre sans friction au SSO de votre entreprise.
+
+Mes points forts sont :
+ - la mise en place d'un traitement fiable des données de votre entreprise, 
+ - l'enrichissement de vos base de données par OpenData,
+
+Techniquement, je déploie le traitement sur votre cloud interne (OpenShift) ou externe (Microsoft Azure).
 
 ## Réalisations
 
@@ -16,24 +22,25 @@ Mes solutions s'intègre sans friction au SSO de votre entreprise.
 
     🎯 Extraction automatique des tolérances sur les essais au sol
     📝 Rapport qualité étayé par les données pour le fournisseur
-    🛠️ Investigations d'incidents sur la flotte en préparation d'un rapport à l'EASA
+    🛠️ Investigations d'incidents sur la flotte d'A350 en réponse à l'EASA (autorité européenne de certification aéronautique)
 
-🍺 Recommandation de paramètres de germination de l'orge pour une malterie - Dataswati
+🍺 Recommandation de réglages des procédés d'une malterie - Dataswati
 
-    🎯 Proof-of-Concept : réduction du nombre d'essais sur un plan d'expérience
+    🎯 Proof-of-Concept : optimisation du nombre d'essais sur un plan d'expérience, par optimisation bayésienne
     🌽 Amélioration de la qualité par réglage optimal du procédé de germination
     🚰 Réduction de la consommation d'eau par le procédé de trempe
 
-🚁 Décodage et calibration des données moteurs pour l'analyse de performances - Safran Helicopter Engines
+🚁 Analyse de performances d'une flotte de moteurs d'hélicoptères - Safran Helicopter Engines
 
     </> Décodage et extraction des données moteurs sur une flotte d'hélicoptères
     🔬  Calibration, filtrage et normalisation des données de vol
     🔎  Analyse des ruptures de performance pour recommandations au client
 
-☁️ Adaptation GPU des paramétrisations physiques du modèle opérationel de prévisions AROME - Météo-France
+☁️ Adaptation GPU du modèle de prévision opérationel AROME - Météo-France
 
-    🎯 Portage du code AROME de prévisions sur carte graphiques
-    🤖 Evaluation des agents intelligents pour la reprise de dette technique 
+    🎯 Portage des paramétrisations physiques d'AROME sur GPU
+    🤖 Déploiement d'agents intelligents de code pour le réusinage Fortran/CPU -> C++/GPU
+    
 
 ## Outils
 
