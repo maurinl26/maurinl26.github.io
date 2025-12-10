@@ -1,84 +1,80 @@
 ---
 permalink: /
-title: "Je réponds à vos problématiques industrielles par l'IA."
+title: "Data Scientist & Ingénieur HPC Freelance"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Data Scientist et Ingénieur Logiciel HPC, spécialisé dans la Météo et l'énergie.
-Data Scientist et Ingénieur Logiciel AI / HPC, spécialisé dans la météo et l'énergie.
+# Projets récents
 
-Je réponds à vos problématiques industrielles par la mise en place de solutions d'analyse de données, du capteur à la visualisation. 
-Je traduis l'objectif industriel (qualité, optimisation des procédés) en solution digitale.
+**🚗 Plastic Omnium** — Analyse qualité chaîne de peinture automobile  
+→ Réduction du taux de rebut de 50% par analyse des données de process  
+→ Alertes temps réel sur ligne de production  
+→ Enrichissement des réunions Ishikawa par indicateurs objectifs
 
+**✈️ Airbus** — Analyse des défaillances de mise au point A350  
+→ Extraction automatique des tolérances sur essais au sol  
+→ Rapports qualité étayés par les données pour fournisseurs  
+→ Investigations d'incidents flotte A350 en réponse à l'EASA
 
-Mes points forts sont :
- - la mise en place d'un traitement fiable des données de votre entreprise, 
- - l'enrichissement de vos base de données par OpenData,
+**☁️ Météo-France** — Adaptation GPU du modèle de prévision opérationnel AROME  
+→ **Portage des paramétrisations physiques** d'AROME sur architecture GPU  
+→ **Développement d'agents intelligents de code** pour automatiser le réusinage Fortran/CPU → C++/GPU  
+→ **Optimisation HPC** : amélioration significative des performances de calcul pour la prévision météorologique  
+→ Contribution au projet stratégique de modernisation du code météorologique national
 
-Techniquement, je déploie le traitement sur votre cloud interne (OpenShift) ou externe (Microsoft Azure).
+**🍺 Dataswati** — Optimisation procédés malterie  
+→ Réduction du nombre d'essais par optimisation bayésienne  
+→ Amélioration qualité par réglage optimal de la germination  
+→ Réduction consommation d'eau du procédé de trempe
 
-# Réalisations
+**🚁 Safran Helicopter Engines** — Analyse performances moteurs  
+→ Décodage et extraction données moteurs sur flotte d'hélicoptères  
+→ Calibration, filtrage et normalisation des données de vol  
+→ Analyse des ruptures de performance pour recommandations client
 
-🚗 Analyse qualité d'une chaîne de peinture automobile - Plastic Omnium
+---
 
-    🎯 Réduction du taux de rebut de 50% par analyse des données du process de peinture
-    ⚙️ Remontée d'alertes en temps réel sur la chaîne de production
-    📊 Enrichissement des réunions Ishikawa par des indicateurs objectifs
-    
-✈️ Analyse des défaillances de Mise au Point pour l'A350 - Airbus
+# Expertise technique
 
-    🎯 Extraction automatique des tolérances sur les essais au sol
-    📝 Rapport qualité étayé par les données pour le fournisseur
-    🛠️ Investigations d'incidents sur la flotte d'A350 en réponse à l'EASA (autorité européenne de certification aéronautique)
+**Data Engineering**  
+PostgreSQL • MongoDB • Airflow • ETL • Grafana
 
-🍺 Recommandation de réglages des procédés d'une malterie - Dataswati
+**Cloud & HPC**  
+Azure • OpenShift • Machines EuroHPC • AI Factories • GPU Computing
 
-    🎯 Proof-of-Concept : optimisation du nombre d'essais sur un plan d'expérience, par optimisation bayésienne
-    🌽 Amélioration de la qualité par réglage optimal du procédé de germination
-    🚰 Réduction de la consommation d'eau par le procédé de trempe
+**Data Science & IA**  
+Machine Learning • Optimisation bayésienne • Filtrage stochastique • Assimilation de données
 
-🚁 Analyse de performances d'une flotte de moteurs d'hélicoptères - Safran Helicopter Engines
+**Langages & Frameworks**  
+Python • Fortran • C++ • CUDA
 
-    </> Décodage et extraction des données moteurs sur une flotte d'hélicoptères
-    🔬  Calibration, filtrage et normalisation des données de vol
-    🔎  Analyse des ruptures de performance pour recommandations au client
+---
 
-☁️ Adaptation GPU du modèle de prévision opérationel AROME - Météo-France
+# Démarche
 
-    🎯 Portage des paramétrisations physiques d'AROME sur GPU
-    🤖 Déploiement d'agents intelligents de code pour le réusinage Fortran/CPU -> C++/GPU
-    
+Je traduis vos objectifs industriels (qualité, optimisation des procédés, réduction des coûts) en solutions digitales concrètes.
 
-# Outils
+**Mon approche** : de la collecte des données capteurs jusqu'à la visualisation et l'aide à la décision, je conçois et déploie des pipelines fiables adaptés à votre infrastructure (cloud interne ou externe).
 
-💾 Bases de données : [PostgreSQL](https://www.postgresql.org/), [MongoDB](https://www.mongodb.com/fr-fr/lp/cloud/atlas/try4)
+**Mes domaines d'application** : météorologie, énergie, industrie manufacturière, aéronautique.
 
-⚙️ ETL / Orchestration : [Airflow](https://airflow.apache.org/)
+---
 
-🖥️ Visualisation : [Grafana](https://grafana.com/) 
+# Formation & Enseignement
 
-☁️ Cloud : [Azure](https://azure.microsoft.com/fr-fr/get-started/azure-portal/)
+**Cours** : Filtrage Stochastique (HPC-BigData, ENM/ENSEEIHT)  
+Fondamentaux et applications des algorithmes de filtrage, du filtre de Kalman aux modèles de diffusion, pour l'assimilation de données en géosciences.
 
-🧮 HPC : accès aux machines [EuroHPC](https://www.eurohpc-ju.europa.eu/index_en), AI Factories et Clusters d'entraînement 
-
-# Enseignement - Formation
-
-:closed_book: Filtrage Stochastique, parcours HPC-BigData, ENM / ENSEEIHT
-    :satellite: Fondamentaux et application des algorithmes de filtrage, du filtre Kalman au modèle de diffusion, pour l'assimilation de données en géosciences
-
-# Compétences et certifications
-
-:en:
-:de:
-:fr:
-
+---
 
 # Contact
 
-[maurin.loic.ac@gmail.com](mailto:maurin.loic.ac@gmail.com)
+✉️ [maurin.loic.ac@gmail.com](mailto:maurin.loic.ac@gmail.com)  
+📱 [+33 6 19 64 78 81](tel:+33619647881)
 
-[\+33619647881](tel:+33619647881)
+---
 
+*Solutions d'IA et data science pour l'industrie — Du capteur à la visualisation*
