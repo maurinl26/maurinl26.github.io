@@ -26,9 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Loïc Maurin"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Data Scientist & Ingénieur HPC Freelance • IA & Cloud pour l'industrie"
   location         : "Toulouse"
-  employer         : "Météo-France"
+  employer         : 
   uri              : # URL
   email            : "maurin.loic.ac@gmail.com" 
 
