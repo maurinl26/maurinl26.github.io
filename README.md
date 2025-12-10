@@ -57,7 +57,10 @@ Techniquement, je déploie le traitement sur votre cloud interne (OpenShift) ou 
 ## Enseignement - Formation
 
 :closed_book: Filtrage Stochastique, parcours HPC-BigData, ENM / ENSEEIHT
-    :satellite: Fondamentaux et application des algorithmes de filtrage, du filtre Kalman au modèle de diffusion, pour l'assimilation de données en géosciences
+
+    :chart_with_upwards_trend: Equations différentielles stochastiques
+    :satellite: Filtre Kalman l'assimilation de données en géosciences
+    :computer: Modèles de Diffusion (DDPM) pour l'assimilation de données
 
 ## Compétences et certifications
 
