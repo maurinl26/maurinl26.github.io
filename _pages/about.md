@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Loïc Maurin - Je réponds à vos problématiques industrielles par l'IA."
+title: "Je réponds à vos problématiques industrielles par l'IA."
 author_profile: true
 redirect_from: 
   - /about/
