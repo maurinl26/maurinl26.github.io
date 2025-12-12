@@ -23,7 +23,7 @@ repository               : "maurinl26/maurinl26.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profil.jpg"
   name             : "Loïc Maurin"
   pronouns         : # example: "she/her"  
   bio              : "Data Scientist & Ingénieur HPC Freelance • IA & Cloud pour l'industrie"
