@@ -23,7 +23,7 @@ repository               : "maurinl26/maurinl26.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Loïc Maurin"
   pronouns         : # example: "she/her"  
   bio              : "Data Scientist & Ingénieur HPC Freelance • IA & Cloud pour l'industrie"
@@ -41,7 +41,7 @@ author:
   orcid            : "https://orcid.org/yourorcidurl"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
