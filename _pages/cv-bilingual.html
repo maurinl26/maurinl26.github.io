@@ -1,0 +1,298 @@
+---
+layout: cv
+title: "CV"
+permalink: /cv/
+author_profile: true
+redirect_from:
+  - /resume
+---
+
+<div class="lang-switcher no-print">
+    <button class="lang-toggle" onclick="toggleLanguage()">
+        <span class="lang-flag">🇬🇧</span>
+        <span class="lang-label">EN</span>
+    </button>
+</div>
+
+<header class="cv-header">
+    <div class="header-content">
+        <img src="{{ site.baseurl }}/images/profil.jpg" alt="{{ site.author.name }}" class="profile-photo">
+        <div class="header-text">
+            <h1>{{ site.author.name }}</h1>
+            <p class="title" data-lang-key="site-title">{{ site.author.bio }}</p>
+            <div class="contact">
+                <span>{{ site.author.location }}</span>
+                <span>{{ site.author.email }}</span>
+                <span>
+                    {% if site.author.linkedin %}
+                    <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">LinkedIn</a>
+                    {% endif %}
+                    {% if site.author.github %}
+                     | <a href="https://github.com/{{ site.author.github }}" target="_blank">GitHub</a>
+                    {% endif %}
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="cv-section summary">
+    <p data-lang-key="summary">{{ site.data.cv_fr.summary }}</p>
+</section>
+
+<section class="cv-section experience">
+    <h2 data-lang-key="experience">{{ site.data.translations.fr.experience }}</h2>
+    <div id="experience-content">
+        {% for job in site.data.cv_fr.experience %}
+        <article>
+            <div class="job-header">
+                <h3>{{ job.title }}</h3>
+                <span class="company">{{ job.company }}, {{ job.location }}</span>
+                <span class="dates">{{ job.dates }}</span>
+            </div>
+            <ul>
+                {% for item in job.highlights %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="cv-section education">
+    <h2 data-lang-key="education">{{ site.data.translations.fr.education }}</h2>
+    <div id="education-content">
+        {% for edu in site.data.cv_fr.education %}
+        <article>
+            <div class="job-header">
+                <h3>{{ edu.degree }}</h3>
+                <span class="company">{{ edu.school }}{% if edu.location %}, {{ edu.location }}{% endif %}</span>
+                <span class="dates">{{ edu.dates }}</span>
+            </div>
+            {% if edu.details %}
+            <ul>
+                {% for detail in edu.details %}
+                <li>{{ detail }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="cv-section skills">
+    <h2 data-lang-key="skills">{{ site.data.translations.fr.skills }}</h2>
+    <div class="skills-grid" id="skills-content">
+        {% for skill in site.data.cv_fr.skills %}
+        <div>
+            <h4>{{ skill[1].title }}</h4>
+            <p>{{ skill[1].items }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="cv-section languages">
+    <h2 data-lang-key="languages">{{ site.data.translations.fr.languages }}</h2>
+    <ul class="languages-list" id="languages-content">
+        {% for lang in site.data.cv_fr.languages %}
+        <li><span class="lang-flag-icon">{{ lang.flag }}</span> <strong>{{ lang.name }}:</strong> {{ lang.level }}</li>
+        {% endfor %}
+    </ul>
+</section>
+
+{% if site.data.cv_fr.interests %}
+<section class="cv-section interests">
+    <h2 data-lang-key="interests">{{ site.data.translations.fr.interests }}</h2>
+    <ul id="interests-content">
+        {% for interest in site.data.cv_fr.interests %}
+        <li>{{ interest }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+{% if site.data.cv_fr.achievements %}
+<section class="cv-section achievements">
+    <h2 data-lang-key="achievements">{{ site.data.translations.fr.achievements }}</h2>
+    <ul id="achievements-content">
+        {% for achievement in site.data.cv_fr.achievements %}
+        <li>{{ achievement }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+<div class="action-buttons no-print">
+    <a id="download-pdf-link" href="{{ site.baseurl }}/files/CV_Loic_Maurin_FR.pdf" download="CV_Loic_Maurin_FR.pdf" class="download-btn" data-lang-key="download_pdf">
+        {{ site.data.translations.fr.download_pdf }}
+    </a>
+    <button class="print-btn" onclick="window.print()" data-lang-key="print">
+        {{ site.data.translations.fr.print }}
+    </button>
+</div>
+
+<script>
+    // Store CV data for both languages
+    const cvData = {
+        fr: {{ site.data.cv_fr | jsonify }},
+        en: {{ site.data.cv_en | jsonify }}
+    };
+
+    const translations = {
+        fr: {{ site.data.translations.fr | jsonify }},
+        en: {{ site.data.translations.en | jsonify }}
+    };
+
+    const siteBio = "{{ site.author.bio }}";
+
+    let currentLang = 'fr';
+
+    function toggleLanguage() {
+        const newLang = currentLang === 'fr' ? 'en' : 'fr';
+        switchLanguage(newLang);
+    }
+
+    function switchLanguage(lang) {
+        if (lang === currentLang) return;
+        currentLang = lang;
+
+        // Update section titles and buttons
+        document.querySelectorAll('[data-lang-key]').forEach(el => {
+            const key = el.getAttribute('data-lang-key');
+            if (key === 'site-title') {
+                el.textContent = siteBio;
+            } else if (translations[lang][key]) {
+                el.textContent = translations[lang][key];
+            }
+        });
+
+        // Update summary
+        const summary = document.querySelector('.summary p');
+        if (summary) summary.textContent = cvData[lang].summary;
+
+        // Update experience
+        updateExperience(lang);
+
+        // Update education
+        updateEducation(lang);
+
+        // Update skills
+        updateSkills(lang);
+
+        // Update languages
+        updateLanguages(lang);
+
+        // Update interests
+        updateInterests(lang);
+
+        // Update achievements
+        updateAchievements(lang);
+
+        // Update toggle button to show the other language
+        const toggleBtn = document.querySelector('.lang-toggle');
+        if (toggleBtn) {
+            const flag = toggleBtn.querySelector('.lang-flag');
+            const label = toggleBtn.querySelector('.lang-label');
+            if (lang === 'fr') {
+                flag.textContent = '🇬🇧';
+                label.textContent = 'EN';
+            } else {
+                flag.textContent = '🇫🇷';
+                label.textContent = 'FR';
+            }
+        }
+
+        // Update PDF download link
+        const pdfLink = document.getElementById('download-pdf-link');
+        if (pdfLink) {
+            const pdfFileName = lang === 'fr' ? 'CV_Loic_Maurin_FR.pdf' : 'CV_Loic_Maurin_EN.pdf';
+            pdfLink.href = '{{ site.baseurl }}/files/' + pdfFileName;
+            pdfLink.download = pdfFileName;
+        }
+    }
+
+    function updateExperience(lang) {
+        const container = document.getElementById('experience-content');
+        if (!container) return;
+
+        container.innerHTML = cvData[lang].experience.map(job => `
+            <article>
+                <div class="job-header">
+                    <h3>${job.title}</h3>
+                    <span class="company">${job.company}, ${job.location}</span>
+                    <span class="dates">${job.dates}</span>
+                </div>
+                <ul>
+                    ${job.highlights.map(h => `<li>${h}</li>`).join('')}
+                </ul>
+            </article>
+        `).join('');
+    }
+
+    function updateEducation(lang) {
+        const container = document.getElementById('education-content');
+        if (!container) return;
+
+        container.innerHTML = cvData[lang].education.map(edu => `
+            <article>
+                <div class="job-header">
+                    <h3>${edu.degree}</h3>
+                    <span class="company">${edu.school}${edu.location ? ', ' + edu.location : ''}</span>
+                    <span class="dates">${edu.dates}</span>
+                </div>
+                ${edu.details ? `
+                    <ul>
+                        ${edu.details.map(d => `<li>${d}</li>`).join('')}
+                    </ul>
+                ` : ''}
+            </article>
+        `).join('');
+    }
+
+    function updateSkills(lang) {
+        const container = document.getElementById('skills-content');
+        if (!container) return;
+
+        const skills = cvData[lang].skills;
+        container.innerHTML = Object.entries(skills).map(([key, skill]) => `
+            <div>
+                <h4>${skill.title}</h4>
+                <p>${skill.items}</p>
+            </div>
+        `).join('');
+    }
+
+    function updateLanguages(lang) {
+        const container = document.getElementById('languages-content');
+        if (!container) return;
+
+        container.innerHTML = cvData[lang].languages.map(l =>
+            `<li><span class="lang-flag-icon">${l.flag}</span> <strong>${l.name}:</strong> ${l.level}</li>`
+        ).join('');
+    }
+
+    function updateInterests(lang) {
+        const container = document.getElementById('interests-content');
+        if (!container) return;
+
+        if (cvData[lang].interests) {
+            container.innerHTML = cvData[lang].interests.map(i =>
+                `<li>${i}</li>`
+            ).join('');
+        }
+    }
+
+    function updateAchievements(lang) {
+        const container = document.getElementById('achievements-content');
+        if (!container) return;
+
+        if (cvData[lang].achievements) {
+            container.innerHTML = cvData[lang].achievements.map(a =>
+                `<li>${a}</li>`
+            ).join('');
+        }
+    }
+</script>

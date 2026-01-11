@@ -1,0 +1,132 @@
+# _data/cv_fr.yml
+summary: >
+  Ingénieur de recherche spécialisé en calcul haute performance (HPC) et Machine Learning,
+  avec 5+ ans d'expertise en optimisation GPU, simulation numérique et déploiement de
+  systèmes ML en production. Expert JAX/Python pour projets de recherche collaborative
+  européenne (ECMWF, DestinE).
+
+experience:
+  - title: Ingénieur de recherche
+    company: Météo France
+    location: Toulouse, France
+    dates: Août 2023 - Présent
+    highlights:
+      - Développement de modèles de prévision météo accélérés sur GPU avec JAX et GT4Py pour le système AROME
+      - Implémentation et évaluation de méthodes en volumes finis (FVM) pour la prévision régionale à échelle hectométrique
+      - Collaboration avec l'ECMWF et le Consortium ACCORD-NWP dans le cadre du programme européen DestinE
+      - Optimisation des performances sur architectures HPC, déploiement sur clusters de calcul
+      - "Technologies : JAX, GT4Py, DaCe, Python, CUDA, clusters HPC, Linux"
+
+  - title: Consultant en Data Science
+    company: MP Data - Safran Helicopter Engines
+    location: Pau, France
+    dates: Février 2022 - Janvier 2023
+    highlights:
+      - Développement de modèles de deep learning (PyTorch) pour la surveillance de l'état de santé des moteurs d'hélicoptères
+      - Déploiement de filtres de Kalman et réseaux de neurones pour la prédiction de dégradation moteur
+      - Industrialisation de pipelines ML pour le monitoring en temps réel de 1000+ turbines en production
+      - DevOps - mise en place de dashboards de monitoring et pipelines de données automatisés
+      - "Technologies : PyTorch, Python, Kalman, Docker, Grafana, Airflow, DevOps"
+
+  - title: Ingénieur données industrielles
+    company: EDF Renouvelables
+    location: Paris, France
+    dates: Septembre 2021 - Janvier 2022
+    highlights:
+      - Conception de l'architecture technique de la plateforme de données météo-océan pour parcs éoliens offshore
+      - Développement de pipelines ETL (Python) et d'applications web (ASP.NET) pour le traitement de données
+      - Intégration de sources de données hétérogènes (météo, océan, production) pour l'optimisation énergétique
+      - "Technologies : Python, ASP.NET, Azure, SQL, Data Engineering"
+
+  - title: Machine Learning Engineer
+    company: Dataswati
+    location: Massy, France
+    dates: Septembre 2020 - Septembre 2021
+    highlights:
+      - Recherche et développement sur l'optimisation de plans d'expériences via optimisation Bayésienne
+      - Développement d'indicateurs qualité basés sur l'analyse de séries temporelles industrielles
+      - Construction de pipelines de données avec Airflow pour l'automatisation des traitements
+      - Travail en startup (10 personnes) spécialisée dans l'industrie agro-alimentaire
+      - "Technologies : Python, Optimisation Bayésienne, scikit-learn, Airflow, Time Series"
+
+  - title: Data Scientist - Industrie 4.0
+    company: Plastic Omnium Auto Exterior
+    location: Greer, Caroline du Sud, USA
+    dates: Juillet 2019 - Décembre 2019
+    highlights:
+      - Application de Statistical Process Control et Machine Learning pour l'optimisation qualité d'une ligne de peinture automobile
+      - Analyse de causes racines et maintenance prédictive pour fournisseur BMW
+      - Développement de modèles ML pour la prédiction de défauts et réduction des temps d'arrêt
+      - "Technologies : Python, Analyse statistique, Machine Learning, Manufacturing Analytics"
+
+education:
+  - degree: Diplôme d'Ingénieur - Spécialisation Intelligence Artificielle et Informatique
+    school: CentraleSupélec, Université Paris-Saclay
+    location: Gif-sur-Yvette, France
+    dates: 2017 - 2021
+    details:
+      - "Grande École d'ingénieurs (Top 3 national), ex École Centrale Paris"
+      - "Formation généraliste (2 ans) : mathématiques, physique, modélisation numérique, mécanique des fluides (CFD)"
+      - "Spécialisation (1 an) : Machine Learning, Deep Learning, Optimisation, Informatique"
+      - "Admission sur concours : Top 5% national aux concours des Grandes Écoles d'ingénieurs"
+
+  - degree: Chargé de cours - Filtrage Stochastique et Assimilation de Données
+    school: ENSEEIHT / ENM, Master 2 HPC-Big Data
+    location: Toulouse, France
+    dates: 2024 - 2025
+    details:
+      - "Cours magistral : Filtrage Stochastique et Assimilation de Données"
+      - "Niveau : Bac+5, formation d'excellence en calcul haute performance"
+      - "Public : Étudiants ingénieurs spécialisés en HPC et Big Data"
+
+  - degree: Classes Préparatoires aux Grandes Écoles - Filière PCSI / PSI*
+    school: Lycée aux Lazaristes
+    location: Lyon, France
+    dates: 2015 - 2017
+    details:
+      - "Mathématiques, Physique, Sciences de l'Ingénieur"
+      - "Préparation intensive aux concours des écoles d'ingénieurs"
+
+skills:
+  ml_ai:
+    title: "Machine Learning & Intelligence Artificielle"
+    items: "JAX (expert), PyTorch, TensorFlow, scikit-learn, Deep Learning, Optimisation Bayésienne, Filtrage de Kalman, Assimilation de données, Réseaux de neurones"
+
+  hpc:
+    title: "Calcul Haute Performance (HPC)"
+    items: "GPU Computing (CUDA), GT4Py, DaCe, Calcul distribué, Optimisation de performance, Méthodes numériques, Clusters HPC, Linux"
+
+  programming:
+    title: "Développement & DevOps"
+    items: "Python (expert, 5+ ans), C/C++, SQL, Bash, Docker, Git, CI/CD, Airflow, DevOps"
+
+  data_viz:
+    title: "Données & Visualisation"
+    items: "Grafana, PowerBI, ELK Stack, Matplotlib, ETL, Pipelines de données temps réel, Big Data"
+
+  cloud:
+    title: "Cloud & Infrastructure"
+    items: "AWS (certifié Cloud Practitioner), Azure, Docker, Systèmes haute disponibilité"
+
+languages:
+  - name: "Français"
+    level: "Langue maternelle"
+    flag: "🇫🇷"
+
+  - name: "Anglais"
+    level: "Courant (niveau professionnel)"
+    flag: "🇬🇧"
+
+  - name: "Allemand"
+    level: "Courant (niveau professionnel)"
+    flag: "🇩🇪"
+
+interests:
+  - "Sports : Trail running, cyclisme, ski de randonnée, canyoning"
+  - "Voyages : Bikepacking et aventures outdoor"
+
+achievements:
+  - "Contributeur à la recherche européenne sur la prévision météorologique accélérée par GPU (ECMWF, DestinE)"
+  - "Déploiement de systèmes ML en production surveillant 1000+ équipements industriels en temps réel"
+  - "Enseignant en techniques avancées d'assimilation de données pour programme de master HPC"
+  - "Expérience internationale : France, USA, collaborations de recherche européennes"

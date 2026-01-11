@@ -1,0 +1,66 @@
+name: Build CV PDFs
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - '_data/cv_*.yml'
+      - '_pages/cv-bilingual.html'
+      - '_layouts/cv.html'
+      - 'export_pdfs_both.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdfs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          bundle install
+          npm install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Start Jekyll server
+        run: |
+          bundle exec jekyll serve --host 127.0.0.1 --port 4000 --detach
+
+      - name: Wait for server to be ready
+        run: |
+          timeout 30 bash -c 'until curl -f http://127.0.0.1:4000/cv/ > /dev/null 2>&1; do sleep 2; done' || exit 1
+
+      - name: Generate PDFs
+        run: npm run export
+
+      - name: Commit PDFs
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add files/CV_Loic_Maurin_*.pdf
+          git diff --staged --quiet || git commit -m "Update CV PDFs [skip ci]"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

@@ -1,0 +1,24 @@
+# Translations for UI labels
+en:
+  summary: "Professional Summary"
+  experience: "Professional Experience"
+  education: "Education & Teaching"
+  skills: "Technical Skills"
+  certifications: "Certifications"
+  languages: "Languages"
+  interests: "Interests"
+  achievements: "Achievements"
+  download_pdf: "📥 Download PDF"
+  print: "🖨️ Print"
+
+fr:
+  summary: "Résumé Professionnel"
+  experience: "Expérience Professionnelle"
+  education: "Formation & Enseignement"
+  skills: "Compétences Techniques"
+  certifications: "Certifications"
+  languages: "Langues"
+  interests: "Centres d'Intérêt"
+  achievements: "Réalisations"
+  download_pdf: "📥 Télécharger PDF"
+  print: "🖨️ Imprimer"

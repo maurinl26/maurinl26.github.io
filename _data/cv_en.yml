@@ -1,0 +1,128 @@
+# _data/cv.yml
+summary: >
+  Research Engineer with 5+ years of expertise in High-Performance Computing and
+  Machine Learning, specializing in GPU acceleration, physical simulation, and
+  production ML systems. Strong background in numerical methods, deep learning
+  frameworks (JAX, PyTorch), and collaborative research with leading European
+  institutions (ECMWF, ACCORD-NWP Consortium).
+
+experience:
+  - title: Research Engineer
+    company: Météo France
+    location: Toulouse, France
+    dates: August 2023 - Present
+    highlights:
+      - Developed GPU-accelerated numerical weather prediction models using JAX and GT4Py for AROME forecasting system
+      - Implemented and evaluated Finite Volume Methods (FVM) for hectometric-scale numerical simulations
+      - Collaborated with ECMWF and ACCORD-NWP Consortium on European DestinE program for next-generation weather forecasting
+      - Optimized computational performance on HPC architectures, achieving significant speedup on GPU clusters
+      - "Technologies: JAX, GT4Py, DaCe, Python, CUDA, HPC clusters, Linux"
+
+  - title: Data Science Consultant
+    company: MP Data - Safran Helicopter Engines
+    location: Pau, France
+    dates: February 2022 - January 2023
+    highlights:
+      - Developed deep learning models (PyTorch) for helicopter engine health monitoring and predictive maintenance
+      - Implemented Kalman filtering and neural networks for engine degradation prediction and anomaly detection
+      - Scaled ML pipeline to monitor 1,000+ turbine engines in production, improving maintenance scheduling efficiency
+      - Refactored avionics data decoder and deployed DevOps infrastructure for real-time monitoring dashboards
+      - "Technologies: PyTorch, Python, Kalman Filters, Docker, Grafana, Airflow, DevOps"
+
+  - title: Industrial Data Engineer
+    company: EDF Renewables
+    location: Paris, France
+    dates: September 2021 - January 2022
+    highlights:
+      - Designed technical architecture for offshore wind farm monitoring data platform
+      - Developed ETL pipelines (Python) and web applications (ASP.NET) for meteorological and oceanic data processing
+      - Implemented data management systems for real-time monitoring of offshore wind energy production
+      - "Technologies: Python, ASP.NET, Azure, SQL, Data Engineering"
+
+  - title: Machine Learning Engineer (Intern)
+    company: Dataswati
+    location: Massy, France
+    dates: September 2020 - September 2021
+    highlights:
+      - Conducted R&D on Design of Experiments optimization using Bayesian Optimization for food & beverage industry
+      - Developed ML-driven quality indicators from industrial time-series data for process optimization
+      - Built production data pipelines using Airflow for automated task orchestration in 10-person startup
+      - "Technologies: Python, Bayesian Optimization, scikit-learn, Airflow, Time Series Analysis"
+
+  - title: Industry 4.0 Data Scientist (Intern)
+    company: Plastic Omnium Auto Exterior
+    location: Greer, South Carolina, USA
+    dates: July 2019 - December 2019
+    highlights:
+      - Applied Statistical Process Control and Machine Learning for automotive paint line quality optimization
+      - Performed root cause analysis and predictive maintenance for BMW supplier manufacturing processes
+      - Implemented ML models for defect prediction, reducing quality issues and production downtime
+      - "Technologies: Python, Statistical Analysis, Machine Learning, Manufacturing Analytics"
+
+education:
+  - degree: M.Sc. in Engineering (Specialization - Computer Science & Artificial Intelligence)
+    school: CentraleSupélec, Université Paris-Saclay
+    location: Saclay, France
+    dates: 2017 - 2021
+    details:
+      - "Top-tier French engineering school (Grande École), formerly École Centrale Paris"
+      - "Focus: Machine Learning, Deep Learning, Optimization, Physical Modeling, Computational Fluid Dynamics"
+      - Top 5% performance at French national engineering school entrance exams
+      - "Coursework: Advanced Mathematics, Statistics, Numerical Methods, Computer Science, AI"
+
+  - degree: Lecturer in Stochastic Filtering & Data Assimilation
+    school: ENSEEIHT, Master Program HPC-Big Data
+    location: Toulouse, France
+    dates: 2024 - 2025
+    details:
+      - Teaching advanced data assimilation techniques for graduate-level HPC program
+
+  - degree: Preparatory Classes for Engineering Schools - PCSI / PSI*
+    school: Lycée aux Lazaristes
+    location: Lyon, France
+    dates: 2015 - 2017
+    details:
+      - "Mathematics, Physics, Engineering Sciences"
+      - "Intensive preparation for competitive entrance exams to top French engineering schools"
+
+skills:
+  ml_ai:
+    title: "Machine Learning & Artificial Intelligence"
+    items: "JAX (expert), PyTorch, TensorFlow, scikit-learn, Deep Learning, Bayesian Optimization, Kalman Filtering, Data Assimilation, Neural Networks"
+
+  hpc:
+    title: "High-Performance Computing (HPC)"
+    items: "GPU Computing (CUDA), GT4Py, DaCe, Distributed Computing, Performance Optimization, Numerical Methods, HPC Clusters, Linux"
+
+  programming:
+    title: "Development & DevOps"
+    items: "Python (expert, 5+ years), C/C++, SQL, Bash, Docker, Git, CI/CD, Airflow, DevOps"
+
+  data_viz:
+    title: "Data & Visualization"
+    items: "Grafana, PowerBI, ELK Stack, Matplotlib, ETL, Real-time Data Pipelines, Big Data"
+
+  cloud:
+    title: "Cloud & Infrastructure"
+    items: "AWS (Certified Cloud Practitioner), Azure, Docker, High-Availability Systems"
+
+languages:
+  - name: French
+    level: Native
+    flag: "🇫🇷"
+  - name: English
+    level: Proficient (Professional working proficiency)
+    flag: "🇬🇧"
+  - name: German
+    level: Proficient (Professional working proficiency)
+    flag: "🇩🇪"
+
+interests:
+  - "Sports: Trail running, cycling, alpine skiing"
+  - "Travel: Bikepacking and outdoor adventures"
+
+achievements:
+  - Contributor to GPU-accelerated numerical weather prediction research in collaboration with ECMWF
+  - Deployed production ML systems monitoring 1,000+ industrial assets in real-time
+  - Lecturer in advanced data assimilation techniques for graduate-level HPC program
+  - International experience across France, USA, and European collaborative research programs
