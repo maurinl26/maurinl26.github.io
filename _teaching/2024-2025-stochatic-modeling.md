@@ -2,10 +2,10 @@
 title: "Filtrage et Modélisation stochastique"
 collection: teaching
 type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /teaching/2024-2025-stochastic-modeling
 venue: "ENSEEIHT - ENM"
-date: 2025-12-12
-location: "City, Country"
+date: 2024-12-12
+location: "Toulouse, France"
 ---
 
 Cours de filtrage et modélisation stochastique enseigné aux élèves du parcours **HPC & Big Data** à l'ENSEEIHT et l'ENM.

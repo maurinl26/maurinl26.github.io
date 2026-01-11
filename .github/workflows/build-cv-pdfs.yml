@@ -1,6 +1,8 @@
 name: Build CV PDFs
 
 on:
+  # Run manually or on CV-related file changes
+  workflow_dispatch:
   push:
     branches: [ master ]
     paths:
@@ -8,7 +10,7 @@ on:
       - '_pages/cv-bilingual.html'
       - '_layouts/cv.html'
       - 'export_pdfs_both.js'
-  workflow_dispatch:
+      - 'package.json'
 
 permissions:
   contents: write
@@ -31,7 +33,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
       - name: Install dependencies
         run: |
