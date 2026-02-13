@@ -23,10 +23,15 @@ const pdfOptions = {
 async function generatePDF(lang, outputPath) {
     console.log(`\n📄 Generating ${lang.toUpperCase()} PDF...`);
 
-    const browser = await puppeteer.launch({
+    const macOSChrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+    const launchOptions = {
         headless: 'new',
         args: ['--no-sandbox', '--disable-setuid-sandbox']
-    });
+    };
+    if (fs.existsSync(macOSChrome)) {
+        launchOptions.executablePath = macOSChrome;
+    }
+    const browser = await puppeteer.launch(launchOptions);
 
     try {
         const page = await browser.newPage();
